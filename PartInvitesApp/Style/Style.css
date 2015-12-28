@@ -1,0 +1,9 @@
+﻿body {
+   
+}
+ .field-validation-error{ color: #f00;}
+.field-validation-valid { display: none;}
+ .input-validation-error{ color: #f00;border: 1px solid;background-color: #fee;}
+ .validation-summary-errors{ font-weight: bold; color: #ff0000}
+ .validation-summary-valid { display: none;}
+

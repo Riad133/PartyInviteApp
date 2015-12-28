@@ -1,0 +1,36 @@
+﻿@model PartInvitesApp.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>Thanks</title>
+    <style>
+        body{background-color: #c0c0c0;}
+    </style>
+</head>
+<body>
+<div class="text-center">
+    <h1> Thank You, @Model.Name</h1>
+    <div class="lead">
+        @if (Model.WillAttend == true)
+        {
+            @:It's great that you are attending.
+    }
+        else
+        {
+            @:Sorry that you are not attending.
+    }
+
+
+    </div>
+</div>
+</body>
+</html>
